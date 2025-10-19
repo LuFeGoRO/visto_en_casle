@@ -30,13 +30,23 @@
     
 // }
 //un programa que cada que reciva un numero me de como resultado su raiz, y que no reciva letras
+let bandera=0;
 while(true){
-
-
-
-
+    let entrada=prompt("ingrese valor:");
+    if(entrada=="a"){
+        break
+    }
+    bandera = sumar(bandera,parseint(entrada))
+    console.log(bandera);
+    
 }
-
+function sumar(anterior,nuevo) {
+    return anterior+=nuevo
+    
+}
+function restar(anterior,nuevo) {
+    return anterior-=nuevo
+}
 
 
 
